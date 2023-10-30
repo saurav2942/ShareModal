@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Lunasima", sans-serif;
+    color: rgb(249, 249, 249);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(117, 70, 248);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animate-1 {
+
+    /* we can use this also
+       from{}
+       to{} 
+    */
+    0% {
+        top: 15%;
+        right: 20%;
+    }
+
+    25% {
+        top: 10%;
+        right: 30%;
+    }
+
+    50% {
+        top: 15%;
+        right: 35%;
+    }
+
+    75% {
+        top: 20%;
+        right: 25%;
+    }
+
+    100% {
+        top: 15%;
+        right: 20%;
+    }
+
+}
+
+@keyframes animate-2 {
+
+    /* we can use this also
+       from{}
+       to{} 
+    */
+    0% {
+        bottom: 10%;
+        left: 7%;
+    }
+
+    25% {
+        bottom: 20%;
+        left: 5%;
+    }
+
+    50% {
+        bottom: 13%;
+        left: 10%;
+    }
+
+    100% {
+        bottom: 10%;
+        left: 7%;
+    }
+}
+
+.first-circle {
+    display: block;
+    background-color: aqua;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    animation: animate-1 15s infinite;
+}
+
+.second-circle {
+    display: block;
+    background-color: rgb(250, 255, 104);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    animation: animate-2 10s infinite;
+}
+
+.third-circle {
+    display: block;
+    background-color: rgb(132, 255, 87);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 41%;
+    left: 20%;
+}
+
+.fourth-circle {
+    display: block;
+    background-color: rgb(0, 153, 255);
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 2%;
+    top: 1%;
+}
+
+.fifth-circle {
+    display: block;
+    background-color: rgb(255, 74, 243);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.sixth-circle {
+    display: block;
+    background-color: rgb(255, 121, 121);
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.container {
+    position: absolute;
+    width: 27%;
+    height: 65%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    /* display: none; */
+    /* This line will be removed later*/
+}
+
+.overlay {
+    border: 1px solid;
+    background-color: rgba(210, 210, 210, 0.434);
+    color: white;
+}
+
+.image {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.image img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: x-large;
+    color: antiquewhite;
+    margin-bottom: .2rem;
+}
+
+.designation {
+    color: antiquewhite;
+    font-size: x-large;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.link:visited,
+.link {
+    border: 1px solid;
+    background-color: rgba(234, 255, 72, 0.701);
+    border-radius: 2rem;
+    margin-left: .4rem;
+    color: black;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    background-color: rgba(134, 253, 255, 0.77);
+    cursor: pointer;
+    color: black;
+    border: 1px solid;
+    border-color: rgb(252, 249, 88);
+    box-shadow: 1px 1px 20px rgba(58, 58, 58, 0.649);
+    transform: scale(1.07);
+}
+
+.link:active {
+    background-color: rgba(234, 255, 72, 0.701);
+    cursor: pointer;
+    box-shadow: 3px 2px 3px rgba(12, 12, 12, 0.454);
+    transform: scale(0.98);
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .modal {
+    position: absolute;
+    width: 65%;
+    height: 20%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+} */
+
+@keyframes animate {
+    0% {
+        top: -10%;
+    }
+
+    50% {
+        top: 2%;
+    }
+
+    100% {
+        top: -10%;
+    }
+}
+
+.message {
+    margin: 0;
+    position: absolute;
+    top: -10%;
+    width: 13%;
+    height: 7%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    /* display: none; */
+}
+
+.animate {
+    animation: animate 2s;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1100px) {
+    .first-circle {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .second-circle {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .fourth-circle {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .container {
+        width: 27%;
+        height: 65%;
+    }
+
+    .image img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .message {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .first-circle {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .second-circle {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .fourth-circle {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .container {
+        width: 35%;
+        height: 70%;
+    }
+
+    .image img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .message {
+        width: 18%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .first-circle {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .second-circle {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .fourth-circle {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .sixth-circle {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .container {
+        width: 70%;
+        height: 70%;
+    }
+
+    .image img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .message {
+        width: 35%;
+        height: 7%;
+    }
+
+}
