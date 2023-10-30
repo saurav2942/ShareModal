@@ -5,7 +5,7 @@ let message = document.querySelector(".message");
 let follow = document.querySelector(".link-2");
 
 share.addEventListener("click", (e) => {
-  let link = "http://127.0.0.1:5500/01DOM/Share%20Modal/index.html";
+  let link = "https://sauravmathuriya.netlify.app/";
   navigator.clipboard.writeText(link);
   message.classList.add("animate");
   console.log(message);
