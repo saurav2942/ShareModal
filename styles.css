@@ -192,7 +192,6 @@ body {
     padding: 1rem;
 }
 
-.link:visited,
 .link {
     border: 1px solid;
     background-color: rgba(234, 255, 72, 0.701);
@@ -200,6 +199,14 @@ body {
     margin-left: .4rem;
     color: black;
     transition: all 0.5s;
+}
+
+.link:visited {
+    border: 1px solid;
+    background-color: rgba(234, 255, 72, 0.701);
+    border-radius: 2rem;
+    margin-left: .4rem;
+    color: black;
 }
 
 .link:hover {
